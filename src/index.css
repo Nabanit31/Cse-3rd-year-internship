@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli",sans-serif;
+}
+.navbar {
+ background-color: #3498db !important;
+
+}
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #efeff8 !important;
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #3498db;
+}
+.navbar a:hover{
+  color: rgb(248, 248, 248) !important;
+
+}
+@media (max-width: 991px) {
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: none;
+}
+}
+
+/*______________________________________________________________
+
+________________________Main section header_____________________*/
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight:700;
+  color: black;
+}
+#header .brand-name{
+  color: #3498db;
+}
+.my-3{
+  color: #9b4d4d !important;
+  font-size: 24px;
+}
+.btn-vendor {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 3px solid #3498db;
+  text-decoration: none;
+}
+.btn-vendor:hover{
+  background: #3498db;
+  color: #fff;
+}
+#header .btn-customer{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+#header .btn-customer:hover{
+  background: #3498db;
+  color: #fff;
+}
+.header-img {
+  text-align: right;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+           transform: translateY(-10px);
+  }
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media  (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;  
+  }
+}
+
+@media  (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;  
+  }
+}
+/*------------------------------------------------------------------------------------------
+--------------------Contact---------------------------------------------------------------*/
+ .container{
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+ } 
+/* .container::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+ background-color: red; 
+}  */
+
+ .auto-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media  (min-aspect-ratio: 16/9){
+  .auto-video{
+    width: 100%;
+    height: auto;  
+  }
+}
+
+@media  (max-aspect-ratio: 16/9){
+  .auto-video{
+    width: auto;
+    height: 100%;  
+  }
+}
+
+.header1{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header1 h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight:700;
+  color: black;
+}
+.header1-img {
+  text-align: right;
+}
+
+#header1 .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+           transform: translateY(-10px);
+  }
+} 
+.text-center{
+  color: yellowgreen;
+}
+/* ========================================================= *
+/* ========================Navbar */
+
+.navbar-bg{
+  background-color: #3498db !important;
+   padding:  2rem 0;
+  z-index: 98;
+  position: relative;
+  }
+.navbar-brand{
+  font-size: 2.5rem;
+}
+.navbar li{
+  padding: 0 1.5rem;
+}
+.nav-link a{
+  background-color: rgb(233, 231, 231);
+}
+
+.justify-content-center{
+  align-items: right;
+
+}
+/*  */
+/* ===============================hero section==============================
+===========================================================================*/
+header {
+  background-color:rgb(248, 248, 248) !important ;
+  min-height: 100vh;
+  width: 100%; 
+}
+.main-hero-container {
+  height: 60vh;
+  display: flex;
+}
+.main-hero-container h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.main-hero-para {
+  font-size: 1.5rem;
+  color: rgb(59, 59, 59);
+  margin: 3rem 0 5rem 0;
+  font-weight: lighter;
+  width: 75%;
+}
+.main-hero-container h3 {
+  font-weight: bolder;
+}
+.main-herosection-images{
+  position: relative;
+}
+.main-herosection-images img{
+width: 60%;
+height: 65%;
+right: 35%;
+margin-top: 10rem;
+box-shadow: 0 0.8rem 0.8rem rgb(0,0, 0, 0.25);
+border-radius: 1.5rem;
+position: absolute;
+}
+.main-hero-img2{
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  left: 55%;
+  top: -20%;
+}
+.input-group{
+  position: relative;
+}
+.form-contol-text{
+  position: absolute;
+  height: 5rem;
+  border: none;
+  outline-style: none;
+  padding-left: 1.5rem !important;
+  font-size: 1.4rem;
+  font-weight: lighter !important;
+
+}
+.input-group-text{
+  position: absolute;
+  right: 20%;
+  top: 0.5rem !important;
+  color: rgb(248, 248, 248) !important;
+  background-color:#3498db !important;
+  height: 4rem;
+  width: 15%;
+  border-radius: 5rem !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 77% !important; 
+font-weight:bold !important;
+}
+
+
+/* ---------==============================------------
+-------------------==Findcarfrom css design===========*/
+
+
